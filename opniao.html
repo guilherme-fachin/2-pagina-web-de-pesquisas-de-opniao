@@ -1,0 +1,71 @@
+<! DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Pesquisa de opniao</title>
+		<!--[if it IE 9]>
+		<script src="hrrp://html5shiv.googleecode.com/svn/trunk/html5.is"></script>
+		<![endif]-->
+		<style>
+			*{font-family:Arial}
+			body{background-color:#eaeaea;}
+			div{width:600px; margin:0px auto; background-color:#ffffff; padding:20px;}
+			h1{margin-top:0px; text-align:center;}
+			legend{font-size:12px; color:#999999;}
+			label{width:120px; float:left;line-height: 33px; clear:left;}
+			input[type="text"]{width:400px; padding:5px; margin:2px; border:1px solid #999999; border-radius:4px; float:left;}
+			input[type="email"]{width:400px; padding:5px; margin:2px; border:1px solid #999999; border-radius:4px; float:left;}
+			input[type="number"]{width:400px; padding:5px; margin:2px; border:1px solid #999999; border-radius:4px; float:left;}
+			select{width:400px; padding:5px; margin: 2px; border:1px solid #999999; border-radius:4px; float:left;}
+			textaera{width:520px; padding:5px; margin:2px; border:1px solid #999999; border-radius:4px;}
+			fieldset{margin-bottom:15px;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Pesquisa de opinião</h1>
+			</header>
+			<section>
+				<form action="#">
+					<fieldset>
+						<legend>DADOS PESSOAIS</legend>
+		<label for="txte">nome:</label>
+						<input type="text" id="txte" /><br /><br />
+		<label for="txts">sexo:</label>
+						<select id="txts">
+							<option>Feminino</option>
+							<option>Masculino</option>
+						</select><br/><br />
+		<label for="txtn">email:</label>
+						<input type="email" id="txte" /><br /><br />
+		<label for="txtf">telefone:</label>
+						<input type="text" id="txtf" /><br /><br />
+					</fieldset>
+					<fieldset>
+						<legend>OPNIÃO SOBRE ATENDIMENTO E INSTALAÇÕENS</legend>
+						Nos avalie dando notas de 0 a 10.<br />
+		<label for="txtns">salas:</label>
+						<input type="number" min="0" max="10" id="txtns"/><br /><br />
+		<label for="txtnp">programação:</label>
+						<input type="number" min="0" max="10" id="txtnp"/><br /><br />
+		<label for="txtna">atendimento:</label>
+						<input type="number" min="0" max="10" id="txtna"/><br /><br />
+		<label for="txtnc">conveniencia:</label>
+						<input type="number" min="0" max="10" id="txtnc"/><br/>
+					</fieldset>
+					<br />
+					<fieldset>
+						<legend>CONSIDERACOENS FINAIS</legend>
+						deixe aqui uma mensagem para nos<br />
+						<textarea rows="7" cols="50"></textarea>
+						<br /><br /><input type="checkbox" id="ckbaceitar" checked/>aceito receber ofertas e novidades da rede cinemax.
+						<br /><input type="checkbox" id="ckbaceitar" checked/> aceito receber ofertas e novidades dos pareceiros cinemax.<br />
+					</fieldset>
+					<input type="submit" value="enviar" />
+					<input type="reset" value="resetar" />
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
